@@ -10,7 +10,7 @@ export default function App() {
     <main>
       <Header />
       <Route exact path='/' component={Welcome} />
-      <Route path='/ character-list' component={CharacterList} />
+      <Route path='/character-list' component={CharacterList} />
     </main>
   );
 }
