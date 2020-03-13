@@ -3,6 +3,17 @@ import axios from "axios";
 import CharacterCard from './CharacterCard';
 import SearchForm from './SearchForm';
 
+
+
+
+
+
+
+
+
+
+
+
 export default function CharacterList() {
   const [info, setInfo] = useState([])
 
@@ -18,21 +29,23 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
+
       <SearchForm />
-      <h2>{info.map((data, id) => {
-        return (
-          <CharacterCard
-            key={id}
-            name={data.name}
-            species={data.species}
-            status={data.status}
-            image={data.image}
+      <div>
+        {info.map((data, id) => {
+          return (
+            <CharacterCard
+              key={id}
+              name={data.name}
+              species={data.species}
+              status={data.status}
+              image={data.image}
 
-          />
-        );
-      })}
+            />
+          );
+        })}
+      </div>
 
-      </h2>
     </section>
   );
 }
