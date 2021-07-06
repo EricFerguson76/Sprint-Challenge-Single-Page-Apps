@@ -27,7 +27,12 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
+
+
 > Answer:
+
+The benefit of client-side routing is that it allows us to build 
+  a single-page web application with navigation without the page refreshing.
 
 ## Project Set Up
 
